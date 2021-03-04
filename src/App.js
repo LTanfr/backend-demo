@@ -1,12 +1,13 @@
 import React from 'react';
-import 'antd/dist/antd.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { adminRoutes } from './routes';
+import Frame from './components/Frame';
+import 'antd/dist/antd.css';
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <h1>App</h1>
+    <Frame>
       <Switch>
         {
           adminRoutes.map(route => {
@@ -17,7 +18,7 @@ function App() {
         }
         <Redirect to="/404" />
       </Switch>
-    </div>
+    </Frame>
   );
 }
 
