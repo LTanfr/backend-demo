@@ -30,7 +30,7 @@ export const adminRoutes = [{
   title: '商品管理',
   icon: <ShopOutlined />
 }, {
-  path: '/admin/products/edit/:id',
+  path: '/admin/products/edit/:id?',
   component: Edit,
   isShow: false
 }]

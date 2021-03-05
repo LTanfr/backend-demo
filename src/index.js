@@ -5,7 +5,7 @@ import { mainRoutes } from './routes';
 import App from './App';
 
 ReactDOM.render(
-  <React.StrictMode>
+
     <Router>
       <Switch>
         <Route path="/admin" render={routeProps => <App {...routeProps} />} />
@@ -16,8 +16,7 @@ ReactDOM.render(
         }
         <Redirect to="/404" />
       </Switch>
-    </Router>
-  </React.StrictMode>,
+    </Router>,
   document.getElementById('root')
 );
 
