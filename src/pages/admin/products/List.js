@@ -2,15 +2,15 @@ import React from 'react';
 import { Card, Table, Button, Popconfirm } from 'antd';
 
 const dataSource = [{
-  key: '1',
+  id: '1',
   name: '香皂',
   price: 5
 }, {
-  key: '2',
+  id: '2',
   name: '特仑苏',
   price: 6
 }, {
-  key: '3',
+  id: '3',
   name: '小浣熊',
   price: 1.5
 }
@@ -69,7 +69,7 @@ function List(props) {
         >新增</Button>
       }
     >
-      <Table columns={columns} bordered dataSource={dataSource} />
+      <Table rowKey="id" columns={columns} bordered dataSource={dataSource} />
     </Card>
   )
 }

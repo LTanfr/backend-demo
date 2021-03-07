@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header-dropdown {
+  color: aliceblue;
+}
+.header-dropdown-avatar {
+  margin-right: 10px !important;
+}

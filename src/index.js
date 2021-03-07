@@ -14,6 +14,7 @@ ReactDOM.render(
             return <Route key={route.path} {...route} /> 
           })
         }
+        <Redirect to="/admin" from="/" />
         <Redirect to="/404" />
       </Switch>
     </Router>,
